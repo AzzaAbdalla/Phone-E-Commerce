@@ -1,0 +1,45 @@
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+
+body {
+  background: var(--mainWhite) !important;
+  font-family: "El Messiri" !important;
+  color: var(--mainDark) !important;
+}
+
+.text-title {
+  font-family: "Josefin Sans", sans-serif !important;
+  letter-spacing: 0.3 rem;
+  text-transform: uppercase;
+}
+
+.text-blue {
+  color: var(--mainBlue);
+}
+.text-bright {
+  color: var(--lightBlue);
+}
+/* cart componenet - quantity buttons */
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+.btn-black:hover {
+  color: var(--mainWhite) !important;
+  background: var(--mainDark) !important;
+}
+/* cart component - trash icon */
+.cart-icon {
+  color: var(--mainYellow);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
