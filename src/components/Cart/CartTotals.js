@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
-export default function CarTotals({ value, history }) {
+export default function CarTotals({ value }) {
   const { cartSubTotal, cartTotal, cartTax, clearCart } = value;
   return (
     <PayPalScriptProvider

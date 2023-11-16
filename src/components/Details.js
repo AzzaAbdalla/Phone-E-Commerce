@@ -5,6 +5,7 @@ import { ButtonContainer } from "./Button";
 
 export default class Details extends Component {
   render() {
+    const cart = "true";
     return (
       <ProductConsumer>
         {(value) => {
@@ -44,7 +45,7 @@ export default class Details extends Component {
                   </Link>
                   {/* cart is props sent to ButtonContainer*/}
                   <ButtonContainer
-                    cart
+                    cart={cart}
                     disabled={inCart ? true : false}
                     onClick={() => {
                       value.addToCart(id);
